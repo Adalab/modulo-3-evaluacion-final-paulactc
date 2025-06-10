@@ -1,0 +1,19 @@
+@use './core/reset';
+
+.rendereachCharacter{
+  display:flex;
+  flex-direction: column;
+  background-color: rgb(196, 197, 108);
+ 
+
+}
+
+.image{
+  width:150px;
+  object-fit: contain;
+  border-radius: 8px; 
+  display: block; 
+  
+
+
+}
