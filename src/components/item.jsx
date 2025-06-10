@@ -1,4 +1,4 @@
-function item({ eachCharacterObj }) {
+function Item({ eachCharacterObj }) {
   return (
     <>
       <p>
@@ -14,4 +14,4 @@ function item({ eachCharacterObj }) {
   );
 }
 
-export default item;
+export default Item;

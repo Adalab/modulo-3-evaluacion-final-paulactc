@@ -4,7 +4,10 @@ function List({ character }) {
     <>
       <ul>
         {character.map((eachCharacterObj) => (
-          <li key={eachCharacterObj.name} className="rendereachCharacter">
+          <li
+            key={eachCharacterObj.id + eachCharacterObj.name}
+            className="rendereachCharacter"
+          >
             <Item eachCharacterObj={eachCharacterObj} />
           </li>
         ))}
