@@ -1,6 +1,7 @@
 import "../styles/App.scss";
 import data from "../data/character.json";
 import { useState } from "react";
+import List from "../components/List";
 
 function App() {
   //VARIABLES DE ESTADO
@@ -12,21 +13,7 @@ function App() {
         <h1>Harry Potter </h1>
       </header>
       <main>
-        <ul>
-          {data.map((eachCharacterObj) => (
-            <li key={eachCharacterObj.nombre} className="rendereachCharacter">
-              <p>
-                <img
-                  className="image"
-                  src={eachCharacterObj.imagen}
-                  alt={`photo ${eachCharacterObj.nombre}`}
-                />
-              </p>
-              <p>{eachCharacterObj.nombre} </p>
-              <p>{eachCharacterObj.especie}</p>
-            </li>
-          ))}
-        </ul>
+        <List character={character} />
       </main>
     </>
   );
